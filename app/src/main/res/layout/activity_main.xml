@@ -1,19 +1,253 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:textAlignment="center"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <EditText
+        android:id="@+id/sonucGoster"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:ems="10"
+        android:gravity="right"
+        android:inputType="text"
+        android:onClick="butonSayiTikla"
+        android:paddingTop="102dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="10dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="60sp" />
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        android:paddingTop="3dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/butonac"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/acikgri"
+            android:onClick="butonAcTikla"
+            android:text="AC"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/butonArtiEksi"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/acikgri"
+            android:onClick="butonArtiEksiTikla"
+            android:text="+/-"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/butonyuzde"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/acikgri"
+            android:onClick="butonYuzdeTikla"
+            android:text="%"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/butonBolu"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/sarı"
+            android:onClick="butonOperatorTikla"
+            android:text="÷"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/buton7"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/koyugri"
+            android:onClick="butonSayiTikla"
+            android:text="7"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buton8"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/koyugri"
+            android:onClick="butonSayiTikla"
+            android:text="8"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buton9"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/koyugri"
+            android:onClick="butonSayiTikla"
+            android:text="9"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/butonCarpi"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/sarı"
+            android:onClick="butonOperatorTikla"
+            android:text="X"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buton4"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/koyugri"
+            android:onClick="butonSayiTikla"
+            android:text="4"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buton5"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/koyugri"
+            android:onClick="butonSayiTikla"
+            android:text="5"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buton6"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/koyugri"
+            android:onClick="butonSayiTikla"
+            android:text="6"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/butonEksi"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/sarı"
+            android:onClick="butonOperatorTikla"
+            android:text="–"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buton1"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/koyugri"
+            android:onClick="butonSayiTikla"
+            android:text="1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buton2"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/koyugri"
+            android:onClick="butonSayiTikla"
+            android:text="2"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buton3"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/koyugri"
+            android:onClick="butonSayiTikla"
+            android:text="3"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/butonArti"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/sarı"
+            android:onClick="butonOperatorTikla"
+            android:text="+"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buton0"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/koyugri"
+            android:onClick="butonSayiTikla"
+            android:paddingHorizontal="80dp"
+            android:text="0"
+            android:textSize="24sp" />
+
+
+        <Button
+            android:id="@+id/butonvirgul"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/koyugri"
+            android:text=","
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/butonesittir"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:layout_margin="3dp"
+            android:backgroundTint="@color/sarı"
+            android:onClick="butonEsittirTikla"
+            android:text="="
+            android:textSize="34sp" />
+    </LinearLayout>
+</LinearLayout>

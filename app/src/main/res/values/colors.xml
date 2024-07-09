@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="acikgri">#86696C6E</color>
+    <color name="sarı">#FDA31E</color>
+    <color name="koyugri">#1E1F22</color>
+
 </resources>
